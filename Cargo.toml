@@ -1,8 +1,16 @@
 [package]
-name = "Ter"
+name = "ter"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+quick-xml = "0.22.0"
+reqwest = { version = "0.11.5", features = ["blocking", "json"] }
+url = "2.5.0"
+tokio = { version = "1.35.1", features = ["rt", "rt-multi-thread", "macros"] }
+serde_json = { version = "1.0.113", features = [] }
+serde = { version = "1.0.196", features = ["derive"] }
+regex = "1.10.3"
+html-escape = "0.2.13"
